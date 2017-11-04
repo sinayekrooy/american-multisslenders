@@ -1,0 +1,314 @@
+// Main Sass File// Main Sass File
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+
+$dark: #6b7b88;
+$active-menu: #fb6e6f;
+$menu-font: #434343;
+$dark-font: #828282;
+$redish: #ed848e;
+$footer-bg: #798690;
+$logo-font: #4a4a4a;
+$feautred-font: #7b7b7b;
+$social-hover: #d6d6d6;
+$features-bg: #f6f6f6;
+
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* SOCIAL MENIDA NAVBAR */
+#social-media {
+    background: $dark;
+    height: 40px;
+    
+    a {
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: "Marven Pro", sans-serif;
+    }
+    a:hover {
+        color: $social-hover;
+    }
+}
+
+/* MAIN NAV */ 
+#main-nav {
+    
+}
+
+/* HEADER */
+header {
+    background: url("../img/header-bg.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+
+    .navbar-nav {
+        li a{
+            color: $menu-font;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 15px;
+            text-transform: uppercase;
+        }
+        .active a{
+            color: $active-menu;
+        }
+        li a:hover {
+            color: $active-menu;
+        }
+    }
+    .wrapper {
+        height: 200px;
+        background: white; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)); /* Standard syntax */
+    }
+
+    .content {
+        color: white;
+        h3 {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1.6em;;
+            small {
+                font-size: 30px;
+                font-weight: normal;
+            }
+        }
+        p {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 1.6em;
+            width: 80%;
+        }
+        .header-btn{
+            color: white;
+            background-color: transparent;
+            background-image: none;
+            border: white 1px solid;
+            font-size: 18px;
+            font-weight: bolder;
+            padding: 15px 25px;
+            border-radius: 50px;
+            width: 45%;
+            margin-bottom: 150px;
+        }
+        #customer {
+            background: rgba(255,0,0,0.2);
+        }
+        #customer:hover {
+            background: rgba(255,0,0,0.5);
+            color: $social-hover;
+        }
+        #broker {
+            background: rgba(255,255,255,0.2);
+        }
+        #broker:hover {
+            background: rgba(255,255,255,0.5);
+            color: white;
+        }
+    }
+}
+
+#features {
+    //position: relative;
+    background-color: $features-bg;
+    min-height: 450px;
+
+    .row {
+        height: 100%;
+        position: relative;
+        top: -70px;
+    }
+    
+    .card {
+        width: 100%;
+        height: 100%;
+       
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+
+        img {
+            width: 50%;
+            margin: auto;
+        }
+        .card-body {
+            text-align: center;
+            
+            .card-title {
+                color: $dark;
+                font-weight: bold;
+                font-size: 28px;
+            }
+            .card-text {
+                color: $feautred-font;
+                font-weight: normal;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#about {
+    background-color: $dark;
+    color: white;
+    min-height: 600px;
+    padding: 20px;
+
+    .about-content {
+        padding: 50px 0;
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight:normal;
+            color: $redish;
+            margin-top: 20px;
+            margin-bottom: 35px; 
+        }
+        p {
+            font-size: 18px;
+            font-weight:normal;
+            line-height: 1.8em;
+        }
+    }
+}
+
+#status {
+    background: url("../img/city.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 250px;
+    overflow: hidden;
+
+    .wrapper {
+        min-height: inherit;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .container {
+        min-height: inherit;
+    }
+
+    .row {
+        min-height: inherit;
+    }
+
+    h3 {
+        font-size: 38px;
+        font-weight: normal;
+        color: $redish;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: normal;
+        color: $dark;
+    }
+}
+
+#get-qoute {
+    padding: 70px 0;
+
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: $dark;
+    }
+
+    select, input {
+        height: 60px;
+        color: #8c8c8c;
+    }
+
+    #my-btn {
+        background: $dark;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        min-width: 184px;
+    }
+}
+
+footer {
+    color: white;
+    
+    #footer-content {
+        background-color: $dark;  
+        
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            line-height: 1.8em;
+
+            li {
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 10px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        a {
+            font-size: 18px;
+            font-weight: bold;
+            background: $redish;
+            display: inline-block;
+            width: 250px;
+            height: 55px;
+            border-radius: 5px;
+            line-height: 55px;
+        }
+    }
+
+    #footer-bottom {
+        background-color: $footer-bg;
+        font-size: 16px;
+        font-weight: normal;
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            float: right;
+
+            li {
+                float: left;
+                line-height: 15px;
+            }
+
+            .border-right {
+                border-right: 1px white solid;
+            }
+        }
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width : 769px) {
+    button.header-btn {
+        width: 80% !important;
+    }
+
+    #customer {
+        margin-top: 15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #footer-bottom ul {
+        float: left !important;
+    }
+}
